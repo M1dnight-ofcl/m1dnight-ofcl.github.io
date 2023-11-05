@@ -1,0 +1,49 @@
+@import url('https://fonts.cdnfonts.com/css/jetbrains-mono-2');
+@font-face {
+    font-family: logo;
+    src: url("../assets/doomed.ttf");
+}
+
+$bg1: #222222;
+
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 75dvh;
+    width: 100%;
+    background: $bg1;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+#textWrapper {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    filter: drop-shadow(0 0 1vmin #ffffffa1);
+}
+#textWrapper span {
+    padding-right: 3vmin;
+    font-size: 5vmin;
+    font-weight: 400;
+    font-family: 'JetBrains Mono', sans-serif;
+}
+#textWrapper h1 {
+    font-weight: 400;
+    font-family: logo;
+    font-size: 9vmin;
+}
