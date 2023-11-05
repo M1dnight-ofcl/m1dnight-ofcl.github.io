@@ -8,7 +8,10 @@ body, html {
   width: 100%;
   padding: 0;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "JetBrains Mono", sans-serif;
+}
+body ::selection, html ::selection {
+  background: #9900ff;
 }
 
 header {
@@ -45,4 +48,111 @@ header {
   font-weight: 400;
   font-family: logo;
   font-size: 9vmin;
+}
+
+section {
+  height: 75dvh;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+#s1 {
+  background: url(../assets/bg1.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+sectionOverlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(0.5vmin);
+}
+
+#sidebar {
+  height: calc(100% - 2vmin);
+  width: calc(5dvw - 2vmin);
+  position: absolute;
+  top: 1vmin;
+  left: 1vmin;
+  background: rgba(34, 34, 34, 0.4196078431);
+  backdrop-filter: blur(5vmin);
+  box-sizing: border-box;
+  border: 0.35vmin solid rgba(255, 255, 255, 0.1254901961);
+  border-radius: 1.5vmin;
+  filter: drop-shadow(0 0 1vmin rgba(255, 255, 255, 0.1254901961));
+}
+#sidebar i {
+  aspect-ratio: 1/1;
+  width: 100%;
+  font-size: 3.5vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.35s;
+  transition-timing-function: cubic-bezier(0.74, 0.17, 0.29, 0.89);
+}
+#sidebar i > :not(.sass-icon) {
+  aspect-ratio: 1/1;
+  width: 100%;
+  font-size: 5vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.35s;
+  transition-timing-function: cubic-bezier(0.74, 0.17, 0.29, 0.89);
+}
+#sidebar i > :not(.sass-icon):hover {
+  transform: scale(125%);
+  color: #9900ff;
+  filter: drop-shadow(0 0 1vmin #9900ff);
+}
+#sidebar i:hover {
+  transform: scale(125%);
+  color: #9900ff;
+  filter: drop-shadow(0 0 1vmin #9900ff);
+}
+
+#contents {
+  height: calc(100% - 2vmin);
+  width: calc(45dvw - 2vmin);
+  position: absolute;
+  top: 1vmin;
+  left: 5dvw;
+  background: rgba(34, 34, 34, 0.4196078431);
+  backdrop-filter: blur(5vmin);
+  box-sizing: border-box;
+  border: 0.35vmin solid rgba(255, 255, 255, 0.1254901961);
+  border-radius: 1.5vmin;
+  filter: drop-shadow(0 0 1vmin rgba(255, 255, 255, 0.1254901961));
+  padding: 5vmin;
+}
+#contents h1 {
+  font-size: 8.5vmin;
+  margin: 0;
+  padding: 0;
+  font-weight: 800;
+  color: #e8e8e8;
+  filter: drop-shadow(0 0 1vmin rgba(255, 255, 255, 0.4588235294));
+}
+#contents h1 i {
+  margin: 0;
+  padding: 0;
+  padding-right: 2.5vmin;
+}
+#contents p {
+  font-size: 3vmin;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  color: #d4d4d4;
+  filter: drop-shadow(0 0 1vmin rgba(255, 255, 255, 0.4588235294));
 }/*# sourceMappingURL=style.css.map */

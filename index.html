@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -13,6 +14,89 @@
         <span>Hello, I'm </span> <h1>M1DnighT</h1>
     </div>
 </header>
+
+<section id="s1">
+    <sectionOverlay>
+        <div id="sidebar">
+            <i id="html"  onclick="openLang(event, 'html')"  class="i fa-brands fa-html5"></i>
+            <i id="css"   onclick="openLang(event, 'css')"   class="i fa-brands fa-css3-alt"></i>
+            <i id="py"    onclick="openLang(event, 'py')"    class="i fa-brands fa-python"></i>
+            <i id="js"    onclick="openLang(event, 'js')"    class="i fa-brands fa-square-js"></i>
+            <i id="react" onclick="openLang(event, 'react')" class="i fa-brands fa-react"></i>
+            <i id="sass"  onclick="openLang(event, 'sass')"  class="i fa-brands fa-sass sass-icon"></i>
+        </div>
+        <div id="contents">
+            <div id="htmlC" class="tc">
+                <h1><i class="fa-brands fa-html5"></i>HTML</h1>
+                <p>
+                    I originally learned HTML about a year ago when I wanted to take coding
+                    to the next step. From that point, the only "language" I knew was Scratch,
+                    And it wasn't really cutting it anymore. That's when I went onto w3schools 
+                    and began to learn HTML.
+                </p>
+            </div>
+            <div id="cssC" class="tc">
+                <h1><i class="fa-brands fa-css3-alt"></i>CSS</h1>
+                <p>
+                    I learned css because I wanted to take my websites to the next level, and
+                    what beter way than with css. It was first slightly confusing but got easier
+                    the more I practiced. I never understood why poeple hated css, because once
+                    I got the hang of it I loved it. 
+                </p>
+            </div>
+            <div id="pyC" class="tc">
+                <h1><i class="fa-brands fa-python"></i>Python</h1>
+                <p>
+                    Coding in HTML and CSS was cool enough for me, but I wanted to learn a real
+                    language; one that was easy to learn yet functional for any use. That's when 
+                    I began learning Python. I loved the syntax and the simplicity. It was easy to
+                    set up a python REPL and then just code. I used the lanuggae for a veryt long 
+                    time before learning Javascript and React.
+                </p>
+            </div>
+            <div id="jsC" class="tc">
+                <h1><i class="fa-brands fa-js-square"></i>Javascript</h1>
+                <p>
+                    Javascript was obviously the next step in adding functionality to my pretty barebones
+                    websites at the time. I first began using it for frontend projects before learning how 
+                    to use Node.JS and electron. Javascript used to be my #1 most hated language before I
+                    tried it and got good. Now I love the syntax and almost everything about it!
+                </p>
+            </div>
+            <div id="reactC" class="tc">
+                <h1><i class="fa-brands fa-react"></i>React</h1>
+                <p>
+                    Since I was getting so good at Javascript fullstack, I had to learn a frontend 
+                    framework so I could take my web development to the next level. I decided on react 
+                    because of it's stature in frontend framework. I really love the syntax and how easy
+                    it is to import to any Node.js project. I would have probably even built this website
+                    on react if github pages wasn't a static only hosting program.  
+                </p>
+            </div>
+            <div id="sassC" class="tc">
+                <h1><i class="fa-brands fa-sass"></i>Sass</h1>
+                <p>
+                    CSS is a great lanuage, don't get me wrong, but sometimes it feels almost lacking. That's 
+                    why I picked up sass. I learned it because it was just css but just better in general. I was
+                    working on a project that would require sass so thats kinda why I picked it up, but now I can't 
+                    live without sass. Every project always needs sass. Did you know even this website is built using
+                    sass? To say the least, I love sass. 
+                </p>
+            </div>
+        </div>
+        <script>
+            function openLang(evt, lang) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tc");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                document.getElementById(`${lang}C`).style.display = "block";
+            }
+            openLang(event, 'html')
+        </script>
+    </sectionOverlay>
+</section>
 
 </body>
 </html>
