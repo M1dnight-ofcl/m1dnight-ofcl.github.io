@@ -5,7 +5,7 @@
 }
 
 $bg1: #222222;
-$bg2: #333333;
+$bg2: #2e2e2e;
 $active: #9900ff;
 $h1: #e8e8e8;
 $p1: #d4d4d4;
@@ -69,6 +69,20 @@ section {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    #title {
+        font-size: 8vmin;
+        text-align: right;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        color: $h1;
+        filter: drop-shadow(0 0 1vmin #ffffff75);
+        position: absolute;
+        top: 50%;
+        right: 2vmin;
+        transform: translateY(-50%);
+    }
 }
 sectionOverlay {
     height: 100%;
@@ -196,6 +210,36 @@ sectionOverlay {
             transform: scale(125%);
             color: $active;
             filter: drop-shadow(0 0 1vmin $active);
+        }
+    }
+}
+#s3 {
+    background: $bg1;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5vmin;
+    box-sizing: border-box;
+    .project {
+        box-sizing: border-box;
+        height: 100%;
+        width: 85%;
+        background: $bg2;
+        border-radius: 1.5vmin;
+        padding: 5vmin;
+        margin: 1vmin;
+        flex-grow: 0;
+        flex-shrink: 0;
+        h1 {
+            font-size: 6.5vmin;
+            margin: 0;
+            padding: 0;
+            color: $h1;
+            filter: drop-shadow(0 0 1vmin #ffffff75);
         }
     }
 }
