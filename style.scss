@@ -5,6 +5,7 @@
 }
 
 $bg1: #222222;
+$bg2: #333333;
 $active: #9900ff;
 $h1: #e8e8e8;
 $p1: #d4d4d4;
@@ -142,5 +143,55 @@ sectionOverlay {
         font-weight: 400;
         color: $p1;
         filter: drop-shadow(0 0 1vmin #ffffff75);
+    }
+}
+#am {
+    height: 50dvh;
+    width: 100%;
+    margin: 0;
+    padding: 5vmin;
+    box-sizing: border-box;
+    background: $bg2;
+    h1 {
+        font-size: 5vmin;
+        margin: 0;
+        padding: 0;
+        font-weight: 800;
+        color: $h1;
+        padding-bottom: 2vmin;
+        filter: drop-shadow(0 0 1vmin #ffffff75);
+    }
+    p {
+        font-size: 2.75vmin;
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        color: $p1;
+        filter: drop-shadow(0 0 1vmin #ffffff75);
+    }
+}
+.social-icon-wrapper {
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: .5vmin;
+    padding-left: 0;
+    i {
+        color: $h1;
+        font-size: 3.5vmin;
+        filter: drop-shadow(0 0 1vmin #ffffff75);
+        cursor: pointer;
+        transition: .35s;
+        transition-timing-function: cubic-bezier(.74,.17,.29,.89);
+        padding-right: 1.5vmin;
+        &:hover {
+            transform: scale(125%);
+            color: $active;
+            filter: drop-shadow(0 0 1vmin $active);
+        }
     }
 }
