@@ -1,7 +1,7 @@
 @import url("https://fonts.cdnfonts.com/css/jetbrains-mono-2");
 @font-face {
   font-family: logo;
-  src: url("../assets/doomed.ttf");
+  src: url("./assets/doomed.ttf");
 }
 body, html {
   height: 100%;
@@ -58,7 +58,7 @@ section {
 }
 
 #s1 {
-  background: url(../assets/bg1.png);
+  background: url("./assets/bg1.png");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
