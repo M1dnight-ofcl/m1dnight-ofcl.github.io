@@ -108,6 +108,7 @@ sectionOverlay {
     cursor: pointer;
     transition: .35s;
     transition-timing-function: cubic-bezier(.74,.17,.29,.89);
+    filter: drop-shadow(0 0 1vmin #ffffff75);
 }
 #sidebar {
     height: calc(100% - 2vmin);
