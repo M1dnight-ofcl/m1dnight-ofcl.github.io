@@ -115,6 +115,7 @@ sectionOverlay {
   cursor: pointer;
   transition: 0.35s;
   transition-timing-function: cubic-bezier(0.74, 0.17, 0.29, 0.89);
+  filter: drop-shadow(0 0 1vmin rgba(255, 255, 255, 0.4588235294));
 }
 #sidebar i > :not(.sass-icon) {
   aspect-ratio: 1/1;
@@ -127,6 +128,7 @@ sectionOverlay {
   cursor: pointer;
   transition: 0.35s;
   transition-timing-function: cubic-bezier(0.74, 0.17, 0.29, 0.89);
+  filter: drop-shadow(0 0 1vmin rgba(255, 255, 255, 0.4588235294));
 }
 #sidebar i > :not(.sass-icon):hover {
   transform: scale(125%);

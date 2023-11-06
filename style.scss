@@ -30,7 +30,6 @@ header {
     justify-content: center;
     align-items: center;
     background: url('../assets/banner-bg.png');
-    transform: translateZ(-100px);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -46,7 +45,6 @@ header {
     margin: 0;
     padding: 0;
     color: #fff;
-    transform: translateZ(0);
     filter: drop-shadow(0 0 1vmin #ffffffa1);
 }
 #textWrapper span {
@@ -68,7 +66,6 @@ section {
 }
 #s1 {
     background: url("../assets/bg1.png");
-    transform: translateZ(-100px);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -84,11 +81,10 @@ section {
         position: absolute;
         top: 50%;
         right: 2vmin;
-        transform: translateY(-50%) translateZ(0);
+        transform: translateY(-50%);
     }
 }
 sectionOverlay {
-    transform: translateZ(0);
     height: 100%;
     width: 100%;
     position: absolute;
