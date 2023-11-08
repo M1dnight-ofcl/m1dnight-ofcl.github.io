@@ -124,30 +124,54 @@
 </section>
 
 <section id="s3">
-    <div class="project" id="velocitycss">
-        <div class="projectTextWrapper">
-            <h1 id="vl">Velocity</h1>
-            <p>
-            Velocity is an advanced css framework built in sass, a well known language for taking
-            css to another level by adding functionality to lacking css. The idea behind velocity
-            was to create a framework that could completly negate the use of css while keeping a
-            clean a concise naming scheme to all it's many classes.
-            </p>
+    <div id="container">
+        <div class="project" id="velocitycss">
+            <div class="projectTextWrapper">
+                <h1 id="vl">Velocity</h1>
+                <p>
+                Velocity is an advanced css framework built in sass, a well known language for taking
+                css to another level by adding functionality to lacking css. The idea behind velocity
+                was to create a framework that could completly negate the use of css while keeping a
+                clean a concise naming scheme to all it's many classes.
+                </p>
+            </div>
+            <div class="shade"></div>
         </div>
-        <div class="shade"></div>
-    </div>
-    <div class="project" id="todura">
-        <div class="projectTextWrapper">
-            <h1 id="tl">Todura</h1>
-            <p>
-            Todura is an advanced todo app built entirly in Javascript using Electron and React
-            to truly bring this project to life. In this, you can apply custom themes, make and 
-            manage tasks, ect. It is one of my first projects using Electron but was really fun 
-            to make.
-            </p>
+        <div class="project" id="todura">
+            <div class="projectTextWrapper">
+                <h1 id="tl">Todura</h1>
+                <p>
+                Todura is an advanced todo app built entirly in Javascript using Electron and React
+                to truly bring this project to life. In this, you can apply custom themes, make and 
+                manage tasks, ect. It is one of my first projects using Electron but was really fun 
+                to make.
+                </p>
+            </div>
+            <div class="shade"></div>
         </div>
-        <div class="shade"></div>
     </div>
+    <div class="buttonContainer">
+        <i id="left" class="fa-solid fa-chevron-left"></i>
+        <i id="right" class="fa-solid fa-chevron-right"></i>
+    </div>
+    <script>
+        document.querySelector('#container').addEventListener('wheel', preventScroll, {passive: false});
+        function preventScroll(e){
+            e.preventDefault();
+            e.stopPropagation();
+
+            return false;
+        }
+        document.querySelector('#left').addEventListener('click', (e) => {
+            e.preventDefault();
+            document.getElementById("container").scrollLeft -= window.screen.width;
+        })
+        document.querySelector('#right').addEventListener('click', (e) => {
+            e.preventDefault();
+            document.getElementById("container").scrollLeft += window.screen.width;
+        })
+        // document.getElementById("s3").scrollLeft += 1920;
+    </script>
 </section>
 
 </body>
