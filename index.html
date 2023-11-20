@@ -155,13 +155,6 @@
         <i id="right" class="fa-solid fa-chevron-right"></i>
     </div>
     <script>
-        document.querySelector('#container').addEventListener('wheel', preventScroll, {passive: false});
-        function preventScroll(e){
-            e.preventDefault();
-            e.stopPropagation();
-
-            return false;
-        }
         document.querySelector('#left').addEventListener('click', (e) => {
             e.preventDefault();
             document.getElementById("container").scrollLeft -= window.screen.width;
